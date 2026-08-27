@@ -1,0 +1,548 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fondation MBOLE ASBL (F.M.) – Solidarité, Autonomie & Développement en RDC</title>
+    <meta name="description" content="La Fondation MBOLE ASBL œuvre pour le développement socio-économique, l'appui humanitaire et agricole des populations vulnérables de Kinshasa, RDC.">
+    <meta name="keywords" content="Fondation MBOLE, ASBL, Kinshasa, ONG RDC, humanitaire, agriculture, formation, Kalamu">
+
+    <!-- Google Fonts - Classique & Élégant -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700;800&family=Lato:wght@300;400;700&family=Cormorant+Garamond:ital,wght@0,400;0,600;1,400;1,600&display=swap" rel="stylesheet">
+
+    <!-- Lucide Icons -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- ===== HEADER ===== -->
+    <header class="site-header" id="header">
+        <div class="container header-inner">
+            <a href="#accueil" class="brand">
+                <img src="assets/logo.jpg" alt="Fondation MBOLE ASBL" class="brand-logo">
+                <div class="brand-name">
+                    <span class="brand-title">FONDATION MBOLE</span>
+                    <span class="brand-sub">ASBL &mdash; Kinshasa, RDC</span>
+                </div>
+            </a>
+
+            <nav class="nav" id="mainNav">
+                <ul class="nav-links">
+                    <li><a href="#accueil" class="nav-link active">Accueil</a></li>
+                    <li><a href="#apropos" class="nav-link">À Propos</a></li>
+                    <li><a href="#domaines" class="nav-link">Nos Actions</a></li>
+                    <li><a href="#galerie" class="nav-link">Galerie</a></li>
+                    <li><a href="#contact" class="nav-link">Contact</a></li>
+                </ul>
+            </nav>
+
+            <div class="header-cta">
+                <a href="#contact" class="btn btn-outline-nav">
+                    <i data-lucide="phone"></i> +243 99 75 68 057
+                </a>
+                <button class="btn btn-gold" onclick="openModal('donateModal')">
+                    <i data-lucide="heart"></i> Soutenir
+                </button>
+                <button class="burger" id="burger" aria-label="Menu">
+                    <span></span><span></span><span></span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <!-- ===== HERO SECTION ===== -->
+        <section id="accueil" class="hero">
+            <div class="hero-bg">
+                <img src="assets/hero_bg.jpg" alt="Champs agricoles en RDC" class="hero-bg-img">
+                <div class="hero-overlay"></div>
+            </div>
+            <div class="container hero-content">
+                <div class="hero-eyebrow">
+                    <span class="divider-line"></span>
+                    <span>Organisation Humanitaire &amp; Sociale — Kinshasa</span>
+                    <span class="divider-line"></span>
+                </div>
+                <h1 class="hero-title">
+                    Solidarité,<br>
+                    <em>Autonomie</em> &amp; Résilience<br>
+                    pour la RDC
+                </h1>
+                <p class="hero-sub">
+                    La Fondation MBOLE ASBL œuvre au cœur de Kalamu pour le développement 
+                    socio-économique, l'agriculture communautaire et l'amélioration des conditions 
+                    de vie des populations les plus vulnérables.
+                </p>
+                <div class="hero-actions">
+                    <button class="btn btn-gold btn-lg" onclick="openModal('donateModal')">
+                        <i data-lucide="heart"></i> Faire un Don
+                    </button>
+                    <a href="#domaines" class="btn btn-outline-white btn-lg">
+                        <i data-lucide="compass"></i> Nos Actions
+                    </a>
+                </div>
+
+                <!-- Stats Bar -->
+                <div class="hero-stats">
+                    <div class="stat-item">
+                        <strong>3</strong>
+                        <span>Axes d'Intervention</span>
+                    </div>
+                    <div class="stat-sep"></div>
+                    <div class="stat-item">
+                        <strong>Kalamu</strong>
+                        <span>Commune d'Implantation</span>
+                    </div>
+                    <div class="stat-sep"></div>
+                    <div class="stat-item">
+                        <strong>ASBL</strong>
+                        <span>Loi N°004/2001 — RDC</span>
+                    </div>
+                </div>
+            </div>
+
+            <a href="#apropos" class="scroll-down" aria-label="Défiler vers le bas">
+                <i data-lucide="chevron-down"></i>
+            </a>
+        </section>
+
+        <!-- ===== RUBAN VALEURS ===== -->
+        <div class="values-ribbon">
+            <div class="container values-inner">
+                <div class="value-pill">
+                    <i data-lucide="handshake"></i> Solidarité
+                </div>
+                <div class="value-sep">&bull;</div>
+                <div class="value-pill">
+                    <i data-lucide="eye"></i> Transparence
+                </div>
+                <div class="value-sep">&bull;</div>
+                <div class="value-pill">
+                    <i data-lucide="flame"></i> Engagement
+                </div>
+                <div class="value-sep">&bull;</div>
+                <div class="value-pill">
+                    <i data-lucide="sprout"></i> Autonomie
+                </div>
+                <div class="value-sep">&bull;</div>
+                <div class="value-pill">
+                    <i data-lucide="shield-check"></i> Intégrité
+                </div>
+            </div>
+        </div>
+
+        <!-- ===== À PROPOS ===== -->
+        <section id="apropos" class="section">
+            <div class="container apropos-grid">
+                <div class="apropos-image-col">
+                    <div class="apropos-img-wrapper">
+                        <img src="assets/social.jpg" alt="Actions humanitaires Fondation MBOLE" class="apropos-img">
+                        <div class="apropos-badge">
+                            <i data-lucide="award"></i>
+                            <span>ONG Reconnue — Loi N°004/2001 RDC</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="apropos-text-col">
+                    <span class="section-eyebrow">Qui sommes-nous ?</span>
+                    <h2 class="section-title">Présentation de la<br>Fondation MBOLE ASBL</h2>
+                    <div class="gold-divider"></div>
+                    <p class="section-body">
+                        La <strong>Fondation MBOLE ASBL</strong> est une organisation non gouvernementale et humanitaire basée à Kinshasa. Implantée au cœur de la commune de Kalamu, l'association œuvre pour le développement socio-économique, l'appui communautaire et l'amélioration des conditions de vie des populations vulnérables.
+                    </p>
+                    <p class="section-body">
+                        Fondée et coordonnée par <strong>Emmanuel-Désiré Mbole Bowalodje</strong>, notre institution croit fermement en la force des communautés locales et en leur capacité à bâtir un avenir d'espoir durable.
+                    </p>
+
+                    <!-- Mot du Coordonnateur -->
+                    <blockquote class="quote-box">
+                        <i data-lucide="quote" class="quote-icon"></i>
+                        <p>
+                            « En soutenant notre secteur agro-pastoral, en formant notre jeunesse et en venant en aide aux familles les plus vulnérables de Kalamu, nous construisons une autonomie durable et un avenir plein d'espoir pour tous. »
+                        </p>
+                        <footer>
+                            <strong>Emmanuel-Désiré Mbole Bowalodje</strong>
+                            <span>Coordonnateur Général — Fondation MBOLE ASBL</span>
+                        </footer>
+                    </blockquote>
+
+                    <div class="vision-mission-row">
+                        <div class="vm-card">
+                            <div class="vm-icon"><i data-lucide="eye"></i></div>
+                            <h4>Vision</h4>
+                            <p>Une communauté solidaire, autonome et résiliente face aux défis sociaux et économiques.</p>
+                        </div>
+                        <div class="vm-card">
+                            <div class="vm-icon"><i data-lucide="target"></i></div>
+                            <h4>Mission</h4>
+                            <p>Développement socio-économique, sécurité alimentaire et renforcement des capacités communautaires.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ===== NOS DOMAINES D'ACTION ===== -->
+        <section id="domaines" class="section section-alt">
+            <div class="container">
+                <div class="section-header-center">
+                    <span class="section-eyebrow">Nos Piliers d'Intervention</span>
+                    <h2 class="section-title">Nos Domaines d'Action</h2>
+                    <div class="gold-divider center"></div>
+                    <p class="section-lead">
+                        Trois axes stratégiques complémentaires pour une réponse globale et durable aux besoins des communautés de RDC.
+                    </p>
+                </div>
+
+                <div class="domains-grid">
+                    <!-- Volet 1 -->
+                    <article class="domain-card">
+                        <div class="domain-img-wrap">
+                            <img src="assets/social.jpg" alt="Actions sociales et humanitaires">
+                        </div>
+                        <div class="domain-number">01</div>
+                        <div class="domain-body">
+                            <div class="domain-icon">
+                                <i data-lucide="heart-handshake"></i>
+                            </div>
+                            <h3>Actions Sociales &amp; Humanitaires</h3>
+                            <p>
+                                Soutien direct aux personnes vulnérables, orphelins et familles en détresse. Distribution d'aides d'urgence, promotion de la cohésion nationale et accompagnement social des populations de Kinshasa.
+                            </p>
+                            <ul class="domain-list">
+                                <li><i data-lucide="check"></i> Assistance aux familles en situation critique</li>
+                                <li><i data-lucide="check"></i> Distribution de vivres et fournitures essentielles</li>
+                                <li><i data-lucide="check"></i> Accompagnement social et soutien communautaire</li>
+                            </ul>
+                        </div>
+                    </article>
+
+                    <!-- Volet 2 -->
+                    <article class="domain-card featured-card">
+                        <div class="domain-img-wrap">
+                            <img src="assets/agriculture.jpg" alt="Agriculture agro-pastorale">
+                        </div>
+                        <div class="domain-number">02</div>
+                        <div class="domain-body">
+                            <div class="domain-icon">
+                                <i data-lucide="wheat"></i>
+                            </div>
+                            <h3>Développement Agro-pastoral &amp; Sécurité Alimentaire</h3>
+                            <p>
+                                Promotion de l'agriculture vivrière, des coopératives maraîchères, de la pêche artisanale et de l'élevage pour garantir la souveraineté alimentaire des ménages locaux.
+                            </p>
+                            <ul class="domain-list">
+                                <li><i data-lucide="check"></i> Appui aux intrants agricoles et semences de qualité</li>
+                                <li><i data-lucide="check"></i> Projets d'élevage et de petit bétail</li>
+                                <li><i data-lucide="check"></i> Soutien aux initiatives de pêche et conservation</li>
+                            </ul>
+                        </div>
+                    </article>
+
+                    <!-- Volet 3 -->
+                    <article class="domain-card">
+                        <div class="domain-img-wrap">
+                            <img src="assets/formation.jpg" alt="Formation et encadrement">
+                        </div>
+                        <div class="domain-number">03</div>
+                        <div class="domain-body">
+                            <div class="domain-icon">
+                                <i data-lucide="graduation-cap"></i>
+                            </div>
+                            <h3>Encadrement &amp; Formation</h3>
+                            <p>
+                                Renforcement des capacités individuelles, ateliers de formation professionnelle, entrepreneuriat local et mentoring pour la jeunesse et les femmes afin de créer des emplois durables.
+                            </p>
+                            <ul class="domain-list">
+                                <li><i data-lucide="check"></i> Ateliers pratiques et métiers de terrain</li>
+                                <li><i data-lucide="check"></i> Sensibilisation au développement communautaire</li>
+                                <li><i data-lucide="check"></i> Soutien aux micro-initiatives locales</li>
+                            </ul>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- ===== GALERIE ===== -->
+        <section id="galerie" class="section">
+            <div class="container">
+                <div class="section-header-center">
+                    <span class="section-eyebrow">Impact sur le Terrain</span>
+                    <h2 class="section-title">Galerie &amp; Activités</h2>
+                    <div class="gold-divider center"></div>
+                </div>
+
+                <div class="gallery-filters">
+                    <button class="filter-btn active" data-filter="all">Tout afficher</button>
+                    <button class="filter-btn" data-filter="social">Actions Sociales</button>
+                    <button class="filter-btn" data-filter="agriculture">Agro-pastoral</button>
+                    <button class="filter-btn" data-filter="formation">Formations</button>
+                </div>
+
+                <div class="gallery-grid">
+                    <div class="gallery-item" data-category="social">
+                        <img src="assets/social.jpg" alt="Distribution d'aides humanitaires">
+                        <div class="gallery-caption">
+                            <span class="gallery-tag">Social</span>
+                            <h4>Distribution d'Aides Humanitaires</h4>
+                            <p>Commune de Kalamu, Kinshasa</p>
+                        </div>
+                    </div>
+                    <div class="gallery-item gallery-item--tall" data-category="agriculture">
+                        <img src="assets/agriculture.jpg" alt="Projet agricole RDC">
+                        <div class="gallery-caption">
+                            <span class="gallery-tag">Agriculture</span>
+                            <h4>Coopérative Maraîchère</h4>
+                            <p>Autonomie alimentaire locale</p>
+                        </div>
+                    </div>
+                    <div class="gallery-item" data-category="formation">
+                        <img src="assets/formation.jpg" alt="Atelier de formation">
+                        <div class="gallery-caption">
+                            <span class="gallery-tag">Formation</span>
+                            <h4>Atelier d'Autonomisation</h4>
+                            <p>Renforcement des capacités</p>
+                        </div>
+                    </div>
+                    <div class="gallery-item gallery-item--wide" data-category="social">
+                        <img src="assets/hero_banner.jpg" alt="Mobilisation communautaire">
+                        <div class="gallery-caption">
+                            <span class="gallery-tag">Communauté</span>
+                            <h4>Mobilisation pour la Solidarité</h4>
+                            <p>Descente sur le terrain, Yolo-Sud</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ===== APPEL À L'ACTION ===== -->
+        <section class="cta-section">
+            <div class="cta-bg">
+                <img src="assets/hero_bg.jpg" alt="" class="cta-bg-img">
+                <div class="cta-overlay"></div>
+            </div>
+            <div class="container cta-content">
+                <h2>Agissons Ensemble pour la RDC</h2>
+                <p>Votre soutien nous permet de poursuivre nos actions sur le terrain, à Kinshasa et au-delà.</p>
+                <div class="cta-buttons">
+                    <button class="btn btn-gold btn-lg" onclick="openModal('donateModal')">
+                        <i data-lucide="heart"></i> Faire un Don
+                    </button>
+                    <a href="#contact" class="btn btn-outline-white btn-lg">
+                        <i data-lucide="mail"></i> Nous Contacter
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- ===== CONTACT ===== -->
+        <section id="contact" class="section section-alt">
+            <div class="container">
+                <div class="section-header-center">
+                    <span class="section-eyebrow">Restons en Contact</span>
+                    <h2 class="section-title">Nous Contacter</h2>
+                    <div class="gold-divider center"></div>
+                </div>
+
+                <div class="contact-grid">
+                    <!-- Info -->
+                    <div class="contact-info">
+                        <h3>Nos Coordonnées</h3>
+                        <p class="contact-intro">
+                            Pour toute demande de partenariat, d'information ou pour contribuer à nos actions, n'hésitez pas à nous joindre.
+                        </p>
+
+                        <div class="contact-items">
+                            <div class="contact-item">
+                                <div class="contact-icon"><i data-lucide="map-pin"></i></div>
+                                <div>
+                                    <strong>Adresse du Siège</strong>
+                                    <p>N° 77bis, Avenue Luidi<br>Quartier Yolo-Sud, Commune de Kalamu<br>Kinshasa, RDC</p>
+                                </div>
+                            </div>
+
+                            <div class="contact-item">
+                                <div class="contact-icon"><i data-lucide="phone"></i></div>
+                                <div>
+                                    <strong>Téléphone &amp; WhatsApp</strong>
+                                    <p><a href="tel:+243997568057">+243 99 75 68 057</a></p>
+                                    <span>Lundi au Samedi, 8h – 17h</span>
+                                </div>
+                            </div>
+
+                            <div class="contact-item">
+                                <div class="contact-icon"><i data-lucide="mail"></i></div>
+                                <div>
+                                    <strong>Email</strong>
+                                    <p>contact@fondationmbole.org</p>
+                                    <span>Réponse sous 24–48h</span>
+                                </div>
+                            </div>
+
+                            <div class="contact-item">
+                                <div class="contact-icon"><i data-lucide="user-check"></i></div>
+                                <div>
+                                    <strong>Coordonnateur Général</strong>
+                                    <p>Emmanuel-Désiré Mbole Bowalodje</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Formulaire -->
+                    <div class="contact-form-wrap">
+                        <h3>Envoyer un Message</h3>
+                        <form id="contactForm" onsubmit="handleContactSubmit(event)">
+                            <div class="form-group">
+                                <label for="fullname">Nom complet *</label>
+                                <input type="text" id="fullname" required placeholder="Votre nom et prénom">
+                            </div>
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label for="email">Email *</label>
+                                    <input type="email" id="email" required placeholder="email@exemple.com">
+                                </div>
+                                <div class="form-group">
+                                    <label for="phone">Téléphone</label>
+                                    <input type="tel" id="phone" placeholder="+243 ...">
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="subject">Sujet *</label>
+                                <select id="subject" required>
+                                    <option value="">Sélectionnez un sujet</option>
+                                    <option>Proposition de Partenariat</option>
+                                    <option>Demande d'Information</option>
+                                    <option>Renseignement sur les Dons</option>
+                                    <option>Autre</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label for="message">Votre Message *</label>
+                                <textarea id="message" rows="5" required placeholder="Comment pouvons-nous vous aider ?"></textarea>
+                            </div>
+                            <button type="submit" class="btn btn-green btn-block btn-lg">
+                                <i data-lucide="send"></i> Envoyer le Message
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- ===== FOOTER ===== -->
+    <footer class="footer">
+        <div class="container footer-grid">
+            <div class="footer-brand-col">
+                <div class="footer-brand">
+                    <img src="assets/logo.jpg" alt="Fondation MBOLE" class="footer-logo">
+                    <div>
+                        <span class="footer-title">Fondation MBOLE ASBL</span>
+                        <span class="footer-loc">Kinshasa, RDC</span>
+                    </div>
+                </div>
+                <p class="footer-desc">
+                    Promouvoir une communauté solidaire, autonome et résiliente en République Démocratique du Congo à travers le développement social, agricole et éducatif.
+                </p>
+                <div class="footer-legal">
+                    Régie par la Loi N°004/2001 — ASBL (Sigle : <strong>F.M.</strong>)
+                </div>
+            </div>
+
+            <div class="footer-col">
+                <h4>Navigation</h4>
+                <ul class="footer-nav">
+                    <li><a href="#accueil">Accueil</a></li>
+                    <li><a href="#apropos">À Propos</a></li>
+                    <li><a href="#domaines">Nos Actions</a></li>
+                    <li><a href="#galerie">Galerie</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-col">
+                <h4>Nos Piliers</h4>
+                <ul class="footer-nav">
+                    <li>Actions Sociales &amp; Humanitaires</li>
+                    <li>Développement Agro-pastoral</li>
+                    <li>Sécurité Alimentaire</li>
+                    <li>Encadrement &amp; Formation</li>
+                </ul>
+            </div>
+
+            <div class="footer-col">
+                <h4>Contact</h4>
+                <address class="footer-address">
+                    N° 77bis, Avenue Luidi<br>
+                    Quartier Yolo-Sud, Kalamu<br>
+                    Kinshasa — RDC<br><br>
+                    <a href="tel:+243997568057">+243 99 75 68 057</a>
+                </address>
+                <button class="btn btn-gold btn-sm" onclick="openModal('donateModal')">
+                    <i data-lucide="heart"></i> Faire un Don
+                </button>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <div class="container footer-bottom-inner">
+                <p>&copy; 2026 Fondation MBOLE ASBL (F.M.) — Tous droits réservés.</p>
+                <p>Coordonnateur : Emmanuel-Désiré Mbole Bowalodje</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- ===== MODAL DON ===== -->
+    <div class="modal" id="donateModal">
+        <div class="modal-backdrop" onclick="closeModal('donateModal')"></div>
+        <div class="modal-box">
+            <button class="modal-close-btn" onclick="closeModal('donateModal')">&times;</button>
+            <div class="modal-top">
+                <div class="modal-icon-wrap">
+                    <i data-lucide="heart"></i>
+                </div>
+                <h3>Soutenir la Fondation MBOLE</h3>
+                <p>Votre générosité finance nos actions de terrain à Kalamu et partout en RDC.</p>
+            </div>
+            <div class="modal-body">
+                <h4>Comment contribuer ?</h4>
+
+                <div class="pay-card">
+                    <div class="pay-icon"><i data-lucide="smartphone"></i></div>
+                    <div>
+                        <strong>Mobile Money — RDC</strong>
+                        <p>M-Pesa / Orange Money / Airtel Money</p>
+                        <p class="pay-number">+243 99 75 68 057</p>
+                        <span>Au nom de : Fondation MBOLE ASBL / E.-D. Mbole</span>
+                    </div>
+                </div>
+
+                <div class="pay-card">
+                    <div class="pay-icon"><i data-lucide="building-2"></i></div>
+                    <div>
+                        <strong>Dépôt Direct / Virement Bancaire</strong>
+                        <p>Siège Social : N° 77bis, Av. Luidi, Yolo-Sud, Kalamu, Kinshasa</p>
+                        <span>Contactez-nous pour les coordonnées bancaires officielles.</span>
+                    </div>
+                </div>
+
+                <button class="btn btn-green btn-block" onclick="closeModal('donateModal'); showToast('Merci pour votre soutien à la Fondation MBOLE ASBL !')">
+                    <i data-lucide="check-circle"></i> J'ai effectué mon Don — Merci !
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- ===== TOAST ===== -->
+    <div class="toast-zone" id="toastZone"></div>
+
+    <script src="app.js"></script>
+    <script>lucide.createIcons();</script>
+</body>
+</html>
